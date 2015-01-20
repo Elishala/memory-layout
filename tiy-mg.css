@@ -1,0 +1,120 @@
+body {
+  background-color: #3e4eb8;
+  color: white;
+  padding: 2em;
+
+}
+
+.memory-game {
+  text-align: center;
+  font-family: 'Orbitron' sans-serif;
+  font-weight: bold;
+  /*font-style: normal;*/
+  font-size: 5em;
+}
+
+.icon, .lives {
+  font-family: 'memory-icons' 'Orbitron';
+  /*float: right;*/
+}
+
+.time {
+  float: right;
+}
+
+.top-counter {
+  padding: 10px;
+
+}
+
+.game-container {
+  text-align: center;
+}
+
+.game-tile {
+  width: 15%;
+  margin: 2px 2px 2px 2px;
+  background: #92a6f5;
+  display: inline-block;
+  color: white;
+  border-radius: 1em;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+
+}
+
+/*this is the hack to adjuct the height.*/
+.game-tile:before {
+  content: "";
+  padding-top: 100%;
+  width: 0;
+  float: left;
+}
+
+.check {
+  opacity: 0;
+  position: absolute;
+
+}
+
+.check:checked  + .card-content {
+  visibility: visible;
+}
+
+.card-content {
+  font-family: 'memory-icons' 'Orbitron';
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  visibility: hidden;
+}
+
+/*position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+overflow: auto;*/
+
+/*.h1 {
+font-size: 6em;
+color: white;
+text-align: center;*/
+/*.icon-light-bulb:before {
+content: "c";*/
+/*}*/
+
+/*.icon-heart:before {
+font-family: "untitled-font-1";
+/*text-align: justify;*/
+/*color: white;*/
+/*data-icon:"b";
+}*/
+
+/*.top-counter {
+color: red;
+display: -webkit-flex;
+-webkit-flex-direction: row;
+-webkit-justify-content: space-between;
+-webkit-flex-wrap: wrap;
+}*/
+
+
+/*@media screen and (min-width:1000px) {
+.card-content {
+   font-size: 450%;
+    }
+    }*/
+
+
+
+
+
+
+
+
+/*position the icons absolutely*/
